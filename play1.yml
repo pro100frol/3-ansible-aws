@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  #vars:
+  #  ansible_user: ec2_user
+  tasks:
+  - name: ensure apache is installed
+    apt: name=httpd state=present
+  - name: ensure apache is running
+    service: name=httpd state=started
+
+- hosts: databases
+  tasks:
+  - name: ensure mysql server is installed
+    yum: name=mysql-server state=present

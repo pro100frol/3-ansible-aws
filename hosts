@@ -1,0 +1,8 @@
+[local]
+localhost
+
+[ec2]
+34.250.49.157
+
+[databases]
+52.214.180.225
